@@ -44,25 +44,4 @@ Setup git hooks for conventional commit.
 
 Now, whenever you make a commit, the `pre-commit` hook will be run to check if the commit message conforms [Conventional Commit](https://www.conventionalcommits.org/) rule.
 
-## Building
-
-To build the farming module node and command line client, run the `make build` command from the project's root folder. The output of the build will be generated in the `build` folder.
-
-For cross-builds use the standard `GOOS` and `GOARCH` env vars. i.e. to build for windows:
-
-```bash
-GOOS=windows GOARCH=amd64 make build
-```
-
-## Installation
-
-To install the node client on your machine, run `make install` command from the project's root folder. 
-
-> 💡 you can also use the default `go` command to build the project, check the content of the [Makefile](https://github.com/tendermint/farming/blob/main/Makefile#L90) for reference
-
-## Testing
-
-Run `make test-all` command to run tests.
-
-> 💡 you can also use the default `go` command to build the project, check the content of the [Makefile](https://github.com/tendermint/farming/blob/main/Makefile#L145) for reference
 
